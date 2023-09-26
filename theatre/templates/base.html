@@ -1,25 +1,69 @@
+{% load static %}
+
 <!DOCTYPE html>
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="{% static 'styles.css' %}" />
     <title>Theatre</title>
   </head>
   <body>
     <header>
-      <div class="logo">
-        <a href="#">
-          <img src="#" alt="Here is the picture" />
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">
+          <!-- Тут має бути лого -->
         </a>
-      </div>
-      <nav class="main-nav">
-        <ul class="nav-links">
-          <li><a href="#">Головна</a></li>
-          <li><a href="#">Афіша</a></li>
-          <li><a href="#">Про театр</a></li>
-        </ul>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div
+          class="collapse navbar-collapse"
+          id="navbarSupportedContent"
+          style="font-size: 20px"
+        >
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="#"
+                >Головна <span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Афіша</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Про нас</a>
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input
+              class="form-control mr-sm-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+              Пошук
+            </button>
+          </form>
+        </div>
       </nav>
     </header>
     <main>{% block main %}{% endblock %}</main>
-    <footer class="site-footer"><a href="#">Here is footer</a></footer>
   </body>
 </html>

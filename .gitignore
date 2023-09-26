@@ -1,3 +1,4 @@
 venv/
-theatre/theatre/_pycache_/
-theatre/theatrehome/_pycache_/
+theatre/theatre/__pycache__/*
+theatre/theatrehome/__pycache__*
+db.sqlite3
