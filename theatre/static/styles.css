@@ -1,9 +1,75 @@
-/* Style the header container to use flexbox */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  font-family: "Montserrat", sans-serif;
+}
+
 body {
   background: linear-gradient(#c2dfad95, #24b8625c);
   background-attachment: fixed;
 }
 
-header {
-  margin-bottom: 40px;
+nav {
+  background: #ffffff;
+  padding: 10px 40px 5px 70px;
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+}
+
+nav ul li.logo {
+  flex: 1;
+}
+
+nav ul div.items {
+  padding: 0 25px;
+  display: inline-flex;
+}
+
+nav ul div.items a {
+  text-decoration: none;
+  font-size: 18px;
+  padding: 0 12px;
+}
+
+nav ul .search-icon {
+  height: 40px;
+  width: 240px;
+  display: flex;
+  background: #d7f7c095;
+}
+
+nav ul .search-icon input {
+  height: 100%;
+  width: 200px;
+  border-radius: 5px 0 0 5px;
+  padding-left: 10px;
+  outline: none;
+  font-size: 16px;
+}
+
+nav ul .search-icon .icon {
+  height: 100%;
+  width: 40px;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 0 5px 5px 0;
+  border: 1px solid #cccccc;
+  position: sticky;
+  left: 0;
+}
+
+nav a {
+  color: black;
 }

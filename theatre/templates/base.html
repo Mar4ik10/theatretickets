@@ -11,57 +11,36 @@
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
     <link rel="stylesheet" href="{% static 'styles.css' %}" />
+    <script
+      src="https://kit.fontawesome.com/yourcode.js"
+      crossorigin="anonymous"
+    ></script>
     <title>Theatre</title>
   </head>
   <body>
     <header>
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">
-          <!-- Тут має бути лого -->
-        </a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-toggle="collapse"
-          data-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div
-          class="collapse navbar-collapse"
-          id="navbarSupportedContent"
-          style="font-size: 20px"
-        >
-          <ul class="navbar-nav mr-auto">
-            <li class="nav-item active">
-              <a class="nav-link" href="#"
-                >Головна <span class="sr-only">(current)</span></a
-              >
+      <nav>
+        <ul>
+          <li class="logo">
+            <img src="{% static 'theatre.svg' %}" alt="Theatre logo" />
+          </li>
+          <div class="items">
+            <li><a href="#">Головна</a></li>
+            <li><a href="#">Афіша</a></li>
+            <li><a href="#">Про театр</a></li>
+          </div>
+          <div class="search-icon">
+            <li>
+              <input type="search" placeholder="Пошук..." />
+              <i class="icon fa fa-search"></i>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Афіша</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Про нас</a>
-            </li>
-          </ul>
-          <form class="form-inline my-2 my-lg-0">
-            <input
-              class="form-control mr-sm-2"
-              type="search"
-              placeholder="Search"
-              aria-label="Search"
-            />
-            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
-              Пошук
-            </button>
-          </form>
-        </div>
+          </div>
+        </ul>
       </nav>
     </header>
     <main>{% block main %}{% endblock %}</main>
