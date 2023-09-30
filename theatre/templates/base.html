@@ -27,7 +27,9 @@
       <nav>
         <ul>
           <li class="logo">
-            <img src="{% static 'theatre.svg' %}" alt="Theatre logo" />
+            <a href="#"
+              ><img src="{% static 'theatre.svg' %}" alt="Theatre logo"
+            /></a>
           </li>
           <div class="items">
             <li><a href="#">Головна</a></li>
@@ -42,5 +44,74 @@
       </nav>
     </header>
     <main>{% block main %}{% endblock %}</main>
+
+    <footer>
+      <div class="main-content">
+        <div class="left box">
+          <h2>Адреса</h2>
+          <div class="content">
+            <div class="address">
+              <div class="place">
+                <span class="fa fa-map-marker"></span>
+                <span class="footer-text">01001 Київ-1</span>
+                <span class="footer-text">пл. І. Франка, З</span>
+              </div>
+              <div class="phone">
+                <span class="fa fa-phone"></span>
+                <span class="footer-text">
+                  <a href="tel:+380953660160">+38 (095) 366-01-60</a>
+                </span>
+              </div>
+              <div class="email">
+                <span class="fa fa-envelope"></span>
+                <span class="footer-text">
+                  <a href="mailto:flintm30@gmail.com">flintm30@gmail.com</a>
+                </span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="right box">
+          <h2>Зв'яжіться з нами</h2>
+          <div class="content">
+            <div class="input-form">
+              <form action="">
+                <div class="email-post">
+                  <label for="email-id">Пошта *</label>
+                  <input type="email" name="email" id="email-id" required />
+                </div>
+                <div class="msg-post">
+                  <label for="msg-id">Повідомлення *</label>
+                  <textarea
+                    name="message"
+                    id="msg-id"
+                    cols="25"
+                    rows="2"
+                    required
+                  ></textarea>
+                  <div class="btn-footer">
+                    <button type="submit">Відправити</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="rights-socmedia"
+        style="border-top: 1px solid rgba(0, 0, 0, 0.175)"
+      >
+        <p>© 2022 Company, Inc. All rights reserved.</p>
+        <ul class="media-list">
+          <li>
+            <a href="http://instagram.com/" class="fa fa-instagram"></a>
+          </li>
+          <li>
+            <a href="https://t.me/roosevelt_valor" class="fa fa-telegram"></a>
+          </li>
+        </ul>
+      </div>
+    </footer>
   </body>
 </html>
