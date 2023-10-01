@@ -77,20 +77,30 @@
             <div class="input-form">
               <form action="">
                 <div class="email-post">
-                  <label for="email-id">Пошта *</label>
-                  <input type="email" name="email" id="email-id" required />
+                  <label for="email-id"
+                    >Якщо у вас виникли питання,<br />можете заповнити форму для
+                    контакту нижче.</label
+                  >
+                  <input
+                    type="email"
+                    name="email"
+                    id="email-id"
+                    placeholder="E-Mail"
+                    required
+                  />
                 </div>
                 <div class="msg-post">
-                  <label for="msg-id">Повідомлення *</label>
                   <textarea
+                    maxlength="200"
                     name="message"
                     id="msg-id"
-                    cols="25"
-                    rows="2"
+                    cols="29"
+                    rows="3"
                     required
+                    placeholder="Введіть повідомлення..."
                   ></textarea>
-                  <div class="btn-footer">
-                    <button type="submit">Відправити</button>
+                  <div>
+                    <button class="btn-footer" type="submit">Відправити</button>
                   </div>
                 </div>
               </form>
@@ -102,14 +112,18 @@
         class="rights-socmedia"
         style="border-top: 1px solid rgba(0, 0, 0, 0.175)"
       >
-        <p>© 2022 Company, Inc. All rights reserved.</p>
+        <p>
+          © 2023 Національний театр ім. Франка. Всі права захищені на сайті.
+        </p>
         <ul class="media-list">
-          <li>
-            <a href="http://instagram.com/" class="fa fa-instagram"></a>
-          </li>
-          <li>
-            <a href="https://t.me/roosevelt_valor" class="fa fa-telegram"></a>
-          </li>
+          <div class="media-list-div">
+            <li>
+              <a href="http://instagram.com/" class="fa fa-instagram"></a>
+            </li>
+            <li>
+              <a href="https://t.me/roosevelt_valor" class="fa fa-telegram"></a>
+            </li>
+          </div>
         </ul>
       </div>
     </footer>
