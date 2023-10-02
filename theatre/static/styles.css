@@ -11,13 +11,8 @@ footer {
   font-family: "Montserrat", sans-serif;
 }
 
-main {
-  background: linear-gradient(#c2dfad95, #24b8625c);
-  background-attachment: fixed;
-}
-
 nav {
-  background: rgba(0, 0, 0, 0.045);
+  background: rgb(47, 162, 233);
   padding: 10px 40px 1px 70px;
 }
 
@@ -42,7 +37,7 @@ nav ul div.items a {
   text-decoration: none;
   font-size: 18px;
   padding: 0 12px;
-  color: black;
+  color: rgb(255, 255, 255);
   font-weight: bold;
   transition: color 0.3s ease-in-out;
 }
@@ -65,7 +60,7 @@ nav ul .search-icon input {
 }
 
 nav ul div.items a:hover {
-  color: rgb(11, 179, 230);
+  color: rgb(209, 240, 84);
 }
 
 nav ul .search-icon input:focus {
@@ -87,11 +82,14 @@ nav ul .search-icon .icon:hover {
   background-color: #e3f6ee;
 }
 
-footer {
-  background: rgba(0, 0, 0, 0.045);
+.header-content .img-header {
   width: 100%;
-  position: fixed;
-  bottom: 0px;
+}
+
+footer {
+  color: white;
+  background: rgb(47, 162, 233);
+  width: 100%;
 }
 
 .main-content {
@@ -105,7 +103,7 @@ footer {
 
 footer .left a,
 footer .left .place .footer-text {
-  color: black;
+  color: rgb(255, 255, 255);
   padding-left: 5px;
 }
 
@@ -148,11 +146,13 @@ footer .left .place .footer-text {
 #msg-id {
   margin-bottom: 20px;
   width: 300px;
-  height: 200px;
+  height: 150px;
   border-radius: 0.25rem;
   padding-left: 10px;
   font-size: 16px;
   outline: none;
+  min-height: 100px;
+  max-height: 150px;
 }
 
 footer .rights-socmedia {
@@ -173,7 +173,7 @@ footer .media-list .media-list-div {
 
 footer li .fa-instagram,
 footer li .fa-telegram {
-  color: black;
+  color: white;
   font-size: 30px;
   padding: 0 12px;
 }

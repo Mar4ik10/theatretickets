@@ -1,3 +1,9 @@
-{% extends 'base.html' %}{% block main %}
-<h1>It is main</h1>
+{% extends 'base.html' %} {% load static %} {% block main %}
+<div class="header-content">
+  <div class="img-parent">
+    <div class="img-header">
+      <img src="{% static 'InTheatremain.jpg' %}" alt="Main Photo" />
+    </div>
+  </div>
+</div>
 {% endblock %}
